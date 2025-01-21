@@ -1,0 +1,1003 @@
+/* Import Google Fonts - Quicksand and Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Scrollbar Thumb Gradient */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    0deg,
+    rgba(1, 172, 253, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+/* Scrollbar Thumb Hover Effect */
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(
+    circle,
+    rgba(1, 172, 253, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+/* CSS Variables/Custom Properties */
+:root {
+  --color-1-white: #f7f7f7;
+  --color-2-black: #111111;
+  --color-3-blue: #01acfd;
+  --color-4-orange: #fea301;
+  --color-4-orange-hover: #e08e00;
+  --btn-transition: 0.3s ease-in-out;
+}
+
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', serif;
+}
+
+/* Smooth Scrolling Behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button Reset Styles */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Link Reset Styles */
+a {
+  text-decoration: none;
+}
+
+/* Heading Reset Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 16px;
+}
+
+/* Layout Container Styles */
+header,
+footer,
+section {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* Main Container Style */
+#container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Header Navigation Styles */
+#header .navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Container Style */
+#header .navbar .logo {
+  display: flex;
+  align-items: center;
+  column-gap: 13px;
+}
+
+/* Logo Image Style */
+#header .navbar .logo img {
+  width: 62px;
+}
+
+/* Logo Text Style */
+#header .navbar .logo span {
+  color: var(--color-2-black);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* Navigation Links Container */
+#header .navbar .navLinks {
+  display: flex;
+  column-gap: 32px;
+}
+
+/* Navigation Link Style */
+#header .navbar .navLinks a {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* Individual Navigation Link Colors */
+#header .navbar .navLinks a:nth-child(1) {
+  color: var(--color-4-orange);
+}
+
+#header .navbar .navLinks a:nth-child(2) {
+  color: var(--color-3-blue);
+}
+
+#header .navbar .navLinks a:nth-child(3) {
+  color: rgb(5, 212, 223);
+}
+
+#header .navbar .navLinks a:nth-child(4) {
+  color: rgb(93, 88, 239);
+}
+
+/* Mobile Menu Button (Hidden by Default) */
+#header .navbar .menuBTn {
+  display: none;
+}
+
+/* Contact Button Style */
+#header .navbar .contactBtn {
+  width: 197px;
+  height: 50px;
+  padding: 10px;
+  color: var(--color-1-white);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  border-radius: 12px;
+  background-color: var(--color-4-orange);
+  transition: var(--btn-transition);
+}
+
+/* Contact Button Hover Effect */
+#header .navbar .contactBtn:hover {
+  background-color: var(--color-4-orange-hover);
+}
+
+/* Hero Section Styles */
+#header .hero-section {
+  width: 100%;
+  height: 575px;
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+/* Hero Text Container */
+#header .hero-section .text {
+  width: 640px;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* Hero Heading Style */
+#header .hero-section .text h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  text-align: start;
+  padding-right: 55px;
+  color: var(--color-2-black);
+}
+
+/* Hero Heading Accent Colors */
+#header .hero-section .text h1 span:nth-child(1) {
+  color: var(--color-4-orange);
+}
+
+#header .hero-section .text h1 span:nth-child(2) {
+  color: var(--color-3-blue);
+}
+
+/* Hero Paragraph Style */
+#header .hero-section .text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--color-2-black);
+}
+
+/* Hero Button Style */
+#header .hero-section .text button {
+  width: 197px;
+  height: 50px;
+  padding: 10px;
+  color: var(--color-1-white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  border-radius: 12px;
+  background: var(--color-2-black);
+}
+
+/* Hero Image Container */
+#header .hero-section .img {
+  width: 468.61px;
+  height: 575px;
+}
+
+/* Curriculum Section Styles */
+#curriculum {
+  margin-top: 20px;
+  height: 879px;
+  background-image: url('../assets/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 80px;
+  padding: 60px;
+}
+
+/* Curriculum Heading */
+#curriculum h1 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+  color: var(--color-2-black);
+}
+
+/* Curriculum Box Container */
+#curriculum .curriculum-box {
+  display: flex;
+  column-gap: 28.5px;
+}
+
+/* Individual Curriculum Box Style */
+#curriculum .curriculum-box .box {
+  width: 367.8px;
+  height: 476.78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+}
+
+/* Box Specific Styles */
+#curriculum .curriculum-box .box:nth-child(1) {
+  border: 0.94px solid rgb(222, 245, 255);
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+#curriculum .curriculum-box .box:nth-child(2) {
+  border: 0.94px solid rgb(255, 244, 220);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+#curriculum .curriculum-box .box:nth-child(3) {
+  border: 0.94px solid rgb(242, 232, 255);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+/* Box Image Style */
+#curriculum .curriculum-box .box img {
+  width: 132.61px;
+  height: 135.21px;
+}
+
+/* Box Heading Style */
+#curriculum .curriculum-box .box h2 {
+  font-size: 24.52px;
+  font-weight: 700;
+  line-height: 30.65px;
+  color: var(--color-2-black);
+}
+
+/* Box Paragraph Style */
+#curriculum .curriculum-box .box p {
+  color: rgb(128, 128, 128);
+  font-family: Raleway;
+  font-size: 15.09px;
+  font-weight: 500;
+  line-height: 28.3px;
+  text-align: center;
+}
+
+/* Box Link Style */
+#curriculum .curriculum-box .box a {
+  font-size: 15.09px;
+  font-weight: 700;
+  line-height: 28.3px;
+}
+
+/* Box Link Colors */
+#curriculum .curriculum-box .box:nth-child(1) a {
+  color: rgb(100, 200, 255);
+}
+
+#curriculum .curriculum-box .box:nth-child(2) a {
+  color: rgb(240, 170, 0);
+}
+
+#curriculum .curriculum-box .box:nth-child(3) a {
+  color: rgb(135, 0, 255);
+}
+
+/* Slider Navigation */
+#curriculum .swipe-slider-icons {
+  display: flex;
+  column-gap: 15px;
+}
+
+/* Slider Button Style */
+#curriculum .swipe-slider-icons button {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-4-orange);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: var(--color-1-white);
+}
+
+/* Stories Section Styles */
+#stories {
+  width: 100%;
+  height: 1018.02px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 60px 0px 60px 0px;
+  background: url('../assets/bg.png'),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Stories Heading */
+#stories h1 {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Stories Content Container */
+#stories .content {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Single Image Story Style */
+#stories .content .one-image {
+  width: 540.27px;
+  height: 630.52px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+/* Image Container Style */
+#stories .content .one-image .images {
+  position: relative;
+}
+
+/* Image Content Style */
+#stories .content .one-image .images .image-content img {
+  width: 540px;
+  height: 337px;
+  border-radius: 16px 16px 0px 0px;
+  background: url(), rgb(217, 217, 217);
+}
+
+/* Image Text Container */
+#stories .content .one-image .images .image-content .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px 38px;
+}
+
+/* Image Heading Style */
+#stories .content .one-image .images .image-content .text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38.35px;
+  color: var(--color-2-black);
+}
+
+/* Image Paragraph Style */
+#stories .content .one-image .images .image-content .text p {
+  color: rgb(102, 102, 102);
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+}
+
+/* Image Button Style */
+#stories .content .one-image .images button {
+  position: absolute;
+  width: 174.51px;
+  height: 47.93px;
+  left: 38.35px;
+  top: 314.14px;
+  border-radius: 47.93px;
+  background: rgb(60, 216, 232);
+  color: var(--color-1-white);
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  text-transform: capitalize;
+}
+
+/* Multiple Images Grid */
+#stories .content .multiple-images {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+/* Multiple Images Container */
+#stories .content .multiple-images .images {
+  position: relative;
+}
+
+/* Multiple Images Content Style */
+#stories .content .multiple-images .images .image-content {
+  width: 290.69px;
+  height: 301.61px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+}
+
+/* Multiple Images Text Style */
+#stories .content .multiple-images .images .image-content p {
+  font-size: 15.34px;
+  font-weight: 700;
+  line-height: 28.76px;
+  color: var(--color-2-black);
+  padding: 35px;
+}
+
+/* Multiple Images Button Style */
+#stories .content .multiple-images .images button {
+  position: absolute;
+  width: 174.51px;
+  height: 38.35px;
+  left: 38.35px;
+  top: 157.81px;
+  border-radius: 47.93px;
+  color: white;
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 19.76px;
+  text-transform: capitalize;
+}
+
+/* Multiple Images Button Colors */
+#stories .content .multiple-images .images:nth-child(1) button {
+  background-color: rgb(93, 88, 240);
+}
+
+#stories .content .multiple-images .images:nth-child(2) button {
+  background-color: rgb(149, 178, 38);
+}
+
+#stories .content .multiple-images .images:nth-child(3) button {
+  background-color: rgb(149, 178, 38);
+}
+
+#stories .content .multiple-images .images:nth-child(4) button {
+  background-color: rgb(93, 88, 240);
+}
+
+/* Stories Main Button Style */
+#stories button {
+  width: 197px;
+  height: 50px;
+  padding: 10px;
+  color: var(--color-1-white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  border-radius: 12px;
+  background: var(--color-2-black);
+}
+
+/* Footer Section Styles */
+#footer {
+  width: 100%;
+  background: var(--color-3-blue);
+}
+
+/* Footer Content Container */
+#footer .content {
+  width: 1160px;
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0 auto;
+}
+
+/* Footer Logo Container */
+#footer .footerLogo {
+  width: 399.02px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 20px;
+}
+
+/* Footer Logo Style */
+#footer .footerLogo .logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Footer Logo Image */
+#footer .footerLogo .logo img {
+  width: 82.9px;
+  height: 81.65px;
+}
+
+/* Footer Logo Text */
+#footer .footerLogo .logo span {
+  color: var(--color-1-white);
+  font-size: 42.14px;
+  font-weight: 700;
+  line-height: 39.51px;
+  padding-right: 20px;
+}
+
+/* Footer Description */
+#footer .footerLogo p {
+  color: var(--color-1-white);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Footer About Section */
+#footer .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 25px;
+}
+
+/* Footer About Heading */
+#footer .about h1 {
+  color: var(--color-1-white);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* Footer Links Container */
+#footer .about .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  row-gap: 12px;
+}
+
+/* Footer Link Style */
+#footer .about .links a {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  color: var(--color-1-white);
+}
+
+/* Footer Contact Icons */
+#footer .content .contact-icon {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+/* Contact Icons Heading */
+#footer .content .contact-icon h1 {
+  color: var(--color-1-white);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+/* Social Links Container */
+#footer .content .contact-icon .links {
+  display: flex;
+  column-gap: 15px;
+}
+
+/* Social Icon Style */
+#footer .content .contact-icon .links div {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+/* Social Icon Colors */
+#footer .content .contact-icon .links div:nth-child(1) {
+  background-color: #3374dd;
+}
+
+#footer .content .contact-icon .links div:nth-child(2) {
+  background-color: #ea4c89;
+}
+
+#footer .content .contact-icon .links div:nth-child(3) {
+  background-color: #000000;
+}
+
+#footer .content .contact-icon .links div:nth-child(4) {
+  background-color: #4285f4;
+}
+
+/* Social Icon Link Style */
+#footer .content .contact-icon .links div a {
+  color: white;
+}
+
+/* Mobile Responsive Styles */
+@media only screen and (max-width: 390px) {
+  /* Mobile Container Widths */
+  header,
+  footer,
+  section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Mobile Header Navigation */
+  #header .navbar {
+    height: 70px;
+    display: flex;
+    border-bottom: 1px solid var(--color-4-orange);
+    padding: 15px;
+  }
+
+  /* Mobile Logo */
+  #header .navbar .logo img {
+    width: 46px;
+  }
+
+  #header .navbar .logo span {
+    display: none;
+  }
+
+  /* Hide Desktop Navigation */
+  #header .navbar .contactBtn,
+  #header .navbar .navLinks {
+    display: none;
+  }
+
+  /* Show Mobile Menu Button */
+  #header .navbar .menuBTn {
+    display: block;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  /* Mobile Hero Section */
+  #header .hero-section {
+    width: 390px;
+    height: 725px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    column-gap: 0px;
+    margin-top: 27px;
+  }
+
+  /* Mobile Hero Text */
+  #header .hero-section .text {
+    width: 357px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Mobile Hero Heading */
+  #header .hero-section .text h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  /* Mobile Hero Paragraph */
+  #header .hero-section .text p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  /* Mobile Hero Button */
+  #header .hero-section .text button {
+    width: 131px;
+    height: 42px;
+    padding: 6px 24px 6px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    border-radius: 8px;
+  }
+
+  /* Mobile Hero Image */
+  #header .hero-section .img {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  #header .hero-section .img img {
+    width: 336.58px;
+    height: 413px;
+  }
+
+  /* Mobile Curriculum Section */
+  #curriculum {
+    margin-top: 0;
+    row-gap: 40px;
+    padding: 40px;
+    align-items: center;
+    justify-content: start;
+  }
+
+  /* Mobile Curriculum Heading */
+  #curriculum h1 {
+    font-size: 26px;
+    line-height: 33px;
+  }
+
+  /* Mobile Curriculum Box */
+  #curriculum .curriculum-box {
+    flex-direction: column;
+    row-gap: 13px;
+    column-gap: 0;
+    padding: 20px;
+  }
+
+  /* Mobile Curriculum Box Style */
+  #curriculum .curriculum-box .box {
+    width: 357px;
+    height: 324.47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 22px;
+    padding: 36px 28px 36px 28px;
+  }
+
+  /* Mobile Box Elements */
+  #curriculum .curriculum-box .box img {
+    width: 95.79px;
+    height: 95.79px;
+  }
+
+  #curriculum .curriculum-box .box h2 {
+    font-size: 16.25px;
+    font-weight: 700;
+    color: var(--color-2-black);
+  }
+
+  #curriculum .curriculum-box .box p {
+    color: rgb(128, 128, 128);
+    font-size: 15.22px;
+    font-weight: 500;
+    line-height: 23.16px;
+    text-align: center;
+  }
+
+  #curriculum .curriculum-box .box a {
+    font-size: 10.22px;
+    font-weight: 700;
+    line-height: 1.16px;
+    text-align: center;
+  }
+
+  /* Hide Slider on Mobile */
+  #curriculum .swipe-slider-icons {
+    display: none;
+  }
+
+  /* Mobile Stories Section */
+  #stories {
+    height: 100%;
+    margin-top: 200px;
+    gap: 20px;
+  }
+
+  /* Mobile Stories Content */
+  #stories .content {
+    justify-content: center;
+  }
+
+  /* Hide Single Story on Mobile */
+  #stories .content .one-image {
+    display: none;
+  }
+
+  /* Mobile Stories Heading */
+  #stories h1 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 57.5px;
+  }
+
+  /* Mobile Stories Grid */
+  #stories .content .multiple-images {
+    width: 390px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    gap: 10px;
+  }
+
+  /* Mobile Story Card */
+  #stories .content .multiple-images .images {
+    position: relative;
+  }
+
+  /* Mobile Story Content */
+  #stories .content .multiple-images .images .image-content {
+    width: 173.09px;
+    height: 179.59px;
+    border-radius: 9.53px;
+    background: rgb(255, 255, 255);
+  }
+
+  /* Mobile Story Image */
+  #stories .content .multiple-images .images .image-content img {
+    width: 173.27px;
+    height: 105.39px;
+  }
+
+  /* Mobile Story Text */
+  #stories .content .multiple-images .images .image-content p {
+    font-size: 9.13px;
+    font-weight: 700;
+    line-height: 17.12px;
+    padding: 14px;
+    text-align: left;
+  }
+
+  /* Mobile Story Button */
+  #stories .content .multiple-images .images button {
+    width: 103.91px;
+    height: 22.83px;
+    left: 22.83px;
+    top: 93.96px;
+    font-family: Raleway;
+    font-size: 9.13px;
+    font-weight: 500;
+    line-height: 4px;
+    text-transform: capitalize;
+  }
+
+  /* Mobile Stories Main Button */
+  #stories button {
+    width: 134px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 11px;
+  }
+
+  /* Mobile Footer */
+  #footer .content {
+    width: 390px;
+    height: 642px;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: var(--color-3-blue);
+    padding: 20px;
+  }
+
+  /* Mobile Footer Logo */
+  #footer .footerLogo {
+    width: 100%;
+  }
+
+  /* Mobile Footer Text */
+  #footer .content .footerLogo p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  /* Mobile Footer Logo Text */
+  #footer .footerLogo .logo span {
+    font-size: 35.73px;
+    font-weight: 700;
+    line-height: 33.5px;
+    padding-right: 65px;
+  }
+
+  /* Mobile Footer About */
+  #footer .content .about h1 {
+    font-size: 20.35px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  #footer .about {
+    row-gap: 15px;
+  }
+
+  /* Mobile Footer Links */
+  #footer .about .links a {
+    font-size: 16.96px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  /* Mobile Footer Contact */
+  #footer .contact-icon h1 {
+    font-size: 22.04px;
+    font-weight: 700;
+    line-height: 22.04px;
+  }
+
+  /* Mobile Social Icons */
+  #footer .content .contact-icon .links div {
+    width: 33.91px;
+    height: 33.91px;
+    font-size: 16.96px;
+  }
+}
