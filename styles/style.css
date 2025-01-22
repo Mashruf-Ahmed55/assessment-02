@@ -234,6 +234,23 @@ section {
   height: 575px;
 }
 
+/* Marquee  Tag*/
+marquee {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  background: radial-gradient(
+    circle,
+    rgba(1, 172, 253, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  margin: 30px 0;
+}
+
 /* Curriculum Section Styles */
 #curriculum {
   margin-top: 20px;
